@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+
+        <div>
+            <label for="username"> Username </label><br/>
+            <input id="username" name="username" required>
+        </div>
+        <br/>
+        <div>
+            <label for="email"> Email </label><br/>
+            <input id="email" name="email" required>
+        </div>
+        <br/>
+        <div>
+            <label for="password"> Password </label><br/>
+            <input id="password" name="password" required type="password">
+        </div>
+        <br/>
+        <div>
+            <label for="password2"> Confirm password </label><br/>
+            <input id="password2" name="password2" type="password">
+        </div>
+        <br/>
+        <input type="submit" value="Register">
+    </form>
+
+    <br/>
+    <br/>
+    <a href="{% url 'login' %}"> Login </a>
+
+</body>
+</html>
