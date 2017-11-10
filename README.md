@@ -1,14 +1,14 @@
 
-- Channel module is used for implementing web sockets.
-- Game moves are stored in MoveLog table in database and after finishing game can be replayed by 1 second interval
+> Channel module is used for implementing web sockets.
+> Game moves are stored in MoveLog table in database and after finishing game can be replayed by 1 second interval
 
-- Server side implementation is based on multichat example written by module author
+> Server side implementation is based on multichat example written by module author
     https://github.com/andrewgodwin/channels-examples/tree/master/multichat
 
-- XO client side implementation is based on a code writen by Ray Toal
+> XO client side implementation is based on a code writen by Ray Toal
     https://jsfiddle.net/rtoal/5wKfF/
 
-- Preventing user from cheating:
+> Preventing user from cheating:
         - server-side: don't save move and stop sending message on websocket
         - client-side: add an overlay div which lock page elements
 
@@ -17,6 +17,7 @@
 --------------------------------------------------------
 
 How to run:
+
     1- Install and run redis
         - This project uses Redis as message queue. Download page: http://redis.io/download
         - Redis server IP:PORT can be set in settings.py. The deafult values will be used if no value provided.
@@ -58,6 +59,7 @@ How to run:
 
 
 Additional Info:
+
 	tested on:
 		- OS: Windows 10
 		- Interpreter: Python 3.5.2
@@ -69,6 +71,7 @@ Additional Info:
 --------------------------------------------------------
 
 Future works:
+
 	- Add multiple game and championship
 	- Handle possible exceptions
 	- Add advanced UI
