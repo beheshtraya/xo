@@ -8,6 +8,8 @@
 > XO client side implementation is based on a code writen by Ray Toal
     https://jsfiddle.net/rtoal/5wKfF/
 
+
+
 > Preventing user from cheating:
         - server-side: don't save move and stop sending message on websocket
         - client-side: add an overlay div which lock page elements
